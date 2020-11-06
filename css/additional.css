@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+.delete_icon {
+	margin-right: 10px; float: right; text-align: center; height: 24px; width: 24px; border-radius: 12px; background-color: #86181B; font-weight: bold; position: relative; border: 1px solid #906061;
+}
