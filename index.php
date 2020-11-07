@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/checkboxes.css" media="screen"/>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="js/functions.js"></script>
+
 	
 </head>
 
@@ -24,36 +24,18 @@
 		</div>
 		
 		<div class="content_header_menu">
-			Add Group | <span onClick="createitem()">Add Item</span> | Delete Group | Delete Item
+			
+			<div class="menu_button" onClick="listreset()">Reset List</div>
+			<div class="menu_button" onClick="createitem()">+ Item</div>
+			<div class="menu_button">+ Group</div>
+	
+			<br style="clear: both">
 		</div>
 		
 		<div id="list_box" class="content_main">
 			
-			<div class="list_wrapper"><div class="list_group">IRL Tasks</div></div>
+			<?php include('example_list.php'); ?>
 			
-
-			<!--
-				<div class="list_wrapper">
-				<div class="list_item">
-
-					<label class="checkbox_container">
-					  <input type="checkbox_" id="checkbox_235427529857238">
-					  <span class="checkmark"></span>
-					</label>
-					
-					<div id="item_text" class="item_text" oncontextmenu="edit_label(this.innerHTML)">Set greenscreen up</div>
-					<div id="item_input_box" class="item_input_box">
-						<input type="text" id="item_text_input" class="item_text_input" onkeypress="safe_label(event, this.value)">
-					</div>
-					
-					<div class="delete_icon">
-						<div style="position: absolute; top: -1px; left: 8px;">-</div>
-					</div>
-					<br style="clear: both">
-				</div>
-				</div>
-			-->
-
 		</div>
 		
 		<div class="content_footer">
@@ -64,5 +46,7 @@
 	
 	</div>
 	
+		<script src="js/Sortable.js"></script>
+		<script src="js/functions.js"></script>
 </body>
 </html>
