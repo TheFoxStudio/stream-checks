@@ -111,5 +111,5 @@ a.footer:visited {color: #6441a5; text-decoration: none;}
 }
 
 .item_input_box {
-	display: inline-block; margin-left: 20px; overflow: hidden; width: 0px; height: 0px;
+	display: inline-block; margin-left: 0px; overflow: hidden; width: 0px; height: 0px;
 }
