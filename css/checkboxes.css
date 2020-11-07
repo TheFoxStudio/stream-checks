@@ -3,9 +3,10 @@
 
 /* The container */
 .checkbox_container {
+  margin-left: 0px;
   display: block;
   position: relative;
-  padding-left: 30px;
+  padding-left: 15px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -25,8 +26,8 @@
 /* Create a custom checkbox */
 .checkmark {
   position: absolute;
-  top: 4px;
-  left: 5px;
+  top: -3px;
+  left: 0px;
   height: 15px;
   width: 15px;
   background-color: #A7A9AB;
