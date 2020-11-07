@@ -50,7 +50,7 @@ a.footer:visited {color: #6441a5; text-decoration: none;}
 
 .content_main {
  	padding-top: 20px;
-	padding-bottom: 2px;
+	padding-bottom: 20px;
 	background-color: #272B2D;
 	border-left: 1px solid #6441a5;
 	border-right: 1px solid #6441a5;
@@ -61,6 +61,7 @@ a.footer:visited {color: #6441a5; text-decoration: none;}
 	width: 960px;
 	margin: auto;
 	margin-bottom: 2px;
+	transition: 1s;
 }
 
 .list_group {
@@ -76,6 +77,23 @@ a.footer:visited {color: #6441a5; text-decoration: none;}
 	border: 1px solid #474C4F;
 	padding: 5px 0px 0px 5px;
 	margin-left: 50px;
+	height: 28px;
+	-webkit-box-shadow: inset 0px 0px 40px -10px rgba(39,156,214,0.0);
+	-moz-box-shadow: inset 0px 0px 40px -10px rgba(39,156,214,0.0);
+	box-shadow: inset 0px 0px 40px -10px rgba(39,156,214,0.0);
+	transition: 1s;
+}
+
+.list_handle {
+	display: inline-block;
+	height: 22px;
+}
+
+.label_wrapper {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-left: 30px;
 }
 
 .item_text_input {
@@ -89,9 +107,9 @@ a.footer:visited {color: #6441a5; text-decoration: none;}
 }
 
 .item_text {
-	margin-left: 30px; float: left; display: inline-block; overflow: hidden;
+	display: inline-block; overflow: hidden; margin-left: 20px; height: 22px;
 }
 
 .item_input_box {
-	display: inline-block; margin-left: 30px; overflow: hidden; width: 0px; height: 0px;
+	display: inline-block; margin-left: 20px; overflow: hidden; width: 0px; height: 0px;
 }
