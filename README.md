@@ -1,5 +1,7 @@
 ## // Stream-Checks - Prepare your stream easy and quick. Never forget a thing again //
 
+![promotion image 1](https://github.com/TheFoxStudio/stream-checks/blob/main/img/promo/promo1.PNG "promotion image 1")
+
 
 ## What is Stream-Checks?
 
