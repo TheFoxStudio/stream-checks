@@ -20,7 +20,7 @@
   <div class="content_header_menu">
 	<div class="menu_button_icon" onClick=""><img src="img/settings.png" style="height: 20px;"></div>
     <div class="menu_button" onClick="listreset()">Reset List</div>
-    <div class="menu_button" onClick="createitem(0, 'New Item'), savebutton();"><font style="font-size: 12pt; line-height: 0.4">+</font> Item</div>
+    <div class="menu_button" onClick="createitem(0, 'New Item'), savebutton();"><font style="font-size: 12pt; line-height: 0.4">+</font> Task</div>
     <div class="menu_button" onClick="creategroup(0, 'New Group'), savebutton();"><font style="font-size: 12pt; line-height: 0.4">+</font> Group</div>
     <div id="save_button" class="menu_button_save" onClick="savelist('test')">Save</div>
     <br style="clear: both">
