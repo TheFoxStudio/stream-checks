@@ -31,17 +31,14 @@ The [Sortable](https://github.com/SortableJS/sortablejs) project is used for dra
 
 ## Roadmap
 
-- adding drag&drop support for groups
 - making group drags includes all items of a group
 - adding a save option to a persistent file
-- adding save option to the UI
-- adding a logo
 - adding option to change accent color
 - adding "export list" function
 
 ## Feedback
 
-If you ahve any feedback or suggestions: Please get in contact. I am happy to add more ideas and make it as fitting for you as possible
+If you have any feedback or suggestions: Please get in contact. I am happy to add more ideas and make it as fitting for you as possible
 
 
 
