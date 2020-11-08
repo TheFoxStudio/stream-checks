@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <item>
+    <id>1604862511557</id>
+    <itemgroup>false</itemgroup>
+    <text>IRL</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862517012</id>
+    <itemgroup>true</itemgroup>
+    <text>Setting up greenscreen</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862555477</id>
+    <itemgroup>true</itemgroup>
+    <text>Open webcam cover</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862527776</id>
+    <itemgroup>true</itemgroup>
+    <text>Set microphone volume</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862541058</id>
+    <itemgroup>true</itemgroup>
+    <text>Turn stream lights on</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862572953</id>
+    <itemgroup>false</itemgroup>
+    <text>OBS</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862577940</id>
+    <itemgroup>true</itemgroup>
+    <text>Start OBS</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862585338</id>
+    <itemgroup>true</itemgroup>
+    <text>Update stream title</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862593735</id>
+    <itemgroup>true</itemgroup>
+    <text>Update stream live notification</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862604816</id>
+    <itemgroup>true</itemgroup>
+    <text>Update stream category</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862615060</id>
+    <itemgroup>true</itemgroup>
+    <text>New Item</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862619224</id>
+    <itemgroup>false</itemgroup>
+    <text>Others</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862625316</id>
+    <itemgroup>true</itemgroup>
+    <text>Send tweet about live stream</text>
+    <checked>false</checked>
+  </item>
+  <item>
+    <id>1604862639610</id>
+    <itemgroup>true</itemgroup>
+    <text>Get some water</text>
+    <checked>false</checked>
+  </item>
+</list>
