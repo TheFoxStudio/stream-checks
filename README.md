@@ -2,7 +2,6 @@
 
 ![promotion image 1](https://github.com/TheFoxStudio/stream-checks/blob/main/img/promo/promo1.PNG "promotion image 1")
 
-
 ## What is Stream-Checks?
 
 If you are a streamer you know that streaming is more then just clicking on "Go live" and start talking. Often a lot of preparation goes into a stream.
