@@ -19,6 +19,64 @@
 	
 }
 
+.menu_button_logout {
+	font-weight: bold;
+	background-color: #362222;
+	border-radius: 4px;
+	border: 1px solid #4D3030;
+	float: right;
+	padding: 6px 10px 0px 10px;
+	margin: 0px 5px 5px 5px;
+	
+}
+
+.menu_button_logout:hover {
+	cursor: pointer;
+	background-color: #432A2A;
+	border: 1px solid #573535;
+	
+}
+
+/* Options menu hidden for now */
+.menu_button_icon {
+	font-weight: bold;
+	background-color: #252525;
+	border-radius: 4px;
+	border: 1px solid #3E3E3E;
+	float: right;
+	padding: 5px 10px 0px 10px;
+	margin: 0px 5px 5px 5px;
+	height: 26px;
+	display: none; /* remove this once options are integrated */
+}
+
+.menu_button_icon:hover {
+	cursor: pointer;
+	background-color: #2E2E2E;
+	border: 1px solid #464646;
+	
+}
+
+.menu_button_save {
+	font-weight: bold;
+	background-color: #AB7500;
+	border-radius: 4px;
+	border: 1px solid #DFA427;
+	float: right;
+	padding: 6px 30px 0px 30px;
+	margin: 0px 5px 5px 5px;
+	transition: .4s;
+	opacity: 0;	
+	display: none;
+}
+
+.menu_button_save:hover {
+	cursor: pointer;
+	background-color: #BB8000;
+	border: 1px solid #DFA427;
+	
+}
+
 .delete_icon {
 	text-align: center;
 	font-weight: bold; 
@@ -31,4 +89,5 @@
 	margin-right: 10px; 
 	position: relative; 
 	transition: .5s;
+	cursor: pointer;
 }
