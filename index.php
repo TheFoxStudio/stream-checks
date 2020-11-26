@@ -61,7 +61,7 @@
     <div style="padding: 0px 10px; display: inline-block"><a class="footer" href="https://streamelements.com/palerius/tip" target="_blank">Support the dev</div>
   </div>
 </div>
-	
+	<script src="js/Sortable.js"></script> 
 	<script src="js/functions.js"></script> 
 	<?php 
 	
