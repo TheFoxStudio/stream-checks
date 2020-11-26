@@ -4,7 +4,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #1E2122;
+	background-color: #131516;
 	color: #ffffff;
 }
 
@@ -23,7 +23,7 @@ a.footer:visited {color: #6441a5; text-decoration: none;}
 	width: auto;
 	height: 60px;
 	padding: 20px 0px;
-	background-image: linear-gradient(to bottom right, #6441a5, #4C2E82);
+	background-image: linear-gradient(to bottom right, #6441a5, #3D7CA0);
 }
 
 .content_header_menu {
@@ -79,7 +79,7 @@ a.footer:visited {color: #6441a5; text-decoration: none;}
 	padding: 5px 0px 0px 5px;
 	margin-top: 0px;
 	height: 28px;
-	 -webkit-transition : border 500ms ease-out; 
+	-webkit-transition : border 500ms ease-out; 
  	-moz-transition : border 500ms ease-out;
  	-o-transition : border 500ms ease-out;
 }

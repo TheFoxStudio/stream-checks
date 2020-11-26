@@ -91,3 +91,13 @@
 	transition: .5s;
 	cursor: pointer;
 }
+
+.input_login {
+	width: 99%;
+		color: #ffffff;
+	text-align: left;
+	height: 20px;
+	background-color: #6F6F6F;
+	border-radius: 3px;
+	border: 1px solid #6F6F6F;
+}
