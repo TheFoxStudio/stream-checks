@@ -18,14 +18,41 @@
     </div>
   </div>
   <div class="content_header_menu">
+	 <?php 
+	
+	if(!isset($_COOKIE['userid'])) {		
+	} else {
+		
+		echo '
+		<a href="logout.php" style="text-decoration: none; color: #fff;"><div class="menu_button_logout" onClick="">Logout</div></a>
+		<div class="menu_button_icon" onClick=""><img src="img/settings.png" style="height: 20px;"></div>
+		<div class="menu_button" onClick="listreset()">Reset List</div>
+		<div class="menu_button" onClick="createitem(0, \'New Item\'), savebutton();"><font style="font-size: 12pt; line-height: 0.4">+</font> Item</div>
+		<div class="menu_button" onClick="creategroup(0, \'New Group\'), savebutton();"><font style="font-size: 12pt; line-height: 0.4">+</font> Group</div>
+		<div id="save_button" class="menu_button_save" onClick="savelist(\''.$_COOKIE['userid'].'\')">Save</div>';
+	}
+	 ?>
+	  
 	<div class="menu_button_icon" onClick=""><img src="img/settings.png" style="height: 20px;"></div>
-    <div class="menu_button" onClick="listreset()">Reset List</div>
-    <div class="menu_button" onClick="createitem(0, 'New Item'), savebutton();"><font style="font-size: 12pt; line-height: 0.4">+</font> Task</div>
-    <div class="menu_button" onClick="creategroup(0, 'New Group'), savebutton();"><font style="font-size: 12pt; line-height: 0.4">+</font> Group</div>
-    <div id="save_button" class="menu_button_save" onClick="savelist('test')">Save</div>
+   
     <br style="clear: both">
   </div>
-  <div id="list_box" class="content_main"> </div>
+  
+	<?php 
+	
+	if(!isset($_COOKIE['userid'])) {
+		
+		include('index_nouser.php');	
+		
+	} else {
+		
+		echo '<div id="list_box" class="content_main"></div>';
+	}
+	 ?>
+	
+	
+	
+	
   <div class="content_footer">
     <div style="padding: 0px 10px; display: inline-block">GNU GENERAL PUBLIC LICENSE</div>
     |
@@ -34,41 +61,48 @@
     <div style="padding: 0px 10px; display: inline-block"><a class="footer" href="https://streamelements.com/palerius/tip" target="_blank">Support the dev</div>
   </div>
 </div>
-<script src="js/Sortable.js"></script> 
-<script src="js/functions.js"></script> 
-<script language="JavaScript">
-
-			
-var Connect = new XMLHttpRequest();
-Connect.open("GET", "data.xml", false);
-Connect.setRequestHeader("Content-Type", "text/xml");
-Connect.send(null);
 	
-// Place the response in an XML document.
-var text ;
-var checked ; 
-var id ;
-var thisitem;
-var Document = Connect.responseXML;
-// Place the root node in an element.
-var items = Document.childNodes[0];
-// Retrieve each customer in turn.
-for (var i = 0; i < items.children.length; i++){
+	<script src="js/functions.js"></script> 
+	<?php 
+	
+	if(isset($_COOKIE['userid'])) {
+
+	echo '
+	<script language="JavaScript">
+	
+	var Connect = new XMLHttpRequest();
+	Connect.open("GET", "userdata/'. $_COOKIE['userid'] .'_data.xml", false);
+	Connect.setRequestHeader("Content-Type", "text/xml");
+	Connect.send(null);
+
+	// Place the response in an XML document.
+	var text ;
+	var checked ; 
+	var id ;
+	var thisitem;
+	var Document = Connect.responseXML;
+	// Place the root node in an element.
+	var items = Document.childNodes[0];
+	// Retrieve each customer in turn.
+	for (var i = 0; i < items.children.length; i++){
 		var item = items.children[i];
 		// Access each of the data values.
-		text = item.getElementsByTagName('text');
-		checked = item.getElementsByTagName('checked'); 
-		id = item.getElementsByTagName('id');
-		thisitem = item.getElementsByTagName('itemgroup');
+		text = item.getElementsByTagName(\'text\');
+		checked = item.getElementsByTagName(\'checked\'); 
+		id = item.getElementsByTagName(\'id\');
+		thisitem = item.getElementsByTagName(\'itemgroup\');
 
-		if(thisitem[0].innerHTML == 'false') {
+		if(thisitem[0].innerHTML == \'false\') {
 			creategroup(id[0].innerHTML, text[0].innerHTML);
 		} 
 
-		if(thisitem[0].innerHTML == 'true') {
+		if(thisitem[0].innerHTML == \'true\') {
 			createitem(id[0].innerHTML, text[0].innerHTML);
 		}
 	}
-</script>
+	</script>';
+		
+	}
+	?>
 </body>
 </html>
