@@ -1,13 +1,12 @@
 // JavaScript Document
-/*
-el.addEventListener('contextmenu', function(ev) {
-    ev.preventDefault();
-    alert('success!');
-    return false;
-}, false);
-*/
-
 Sortable.create(list_box, {handle: '.list_handle', animation: 150});
+
+function register() {	
+	document.getElementById('login_box').style.height = "0px";
+	document.getElementById('register_box').style.height = "150px";
+	document.getElementById('register_button').innerHTML = 'Register Now!';
+	document.getElementById('register_button').setAttribute('onclick', 'register_finish()');
+}
 
 // edit an item label
 function edit_label(current_text, id) {
@@ -83,7 +82,7 @@ function savebutton() {
 	}, 1000);
 }
 
-function savelist() {
+function savelist(userid) {
 
 	var dataset = "";
 	var item;
@@ -120,9 +119,8 @@ function savelist() {
 	$.ajax({                                      
 			url: 'save_list.php',       
 			type: "POST",
-			data: {xml: totalxml},
-			success: function () { 
-				
+			data: {xml: totalxml, userid: userid},
+			success: function () { 			
 				document.getElementById('save_button').style.backgroundColor = "#00AB4D";
 				document.getElementById('save_button').style.border = "1px solid #00C157";
 				
@@ -131,19 +129,12 @@ function savelist() {
 					setTimeout(function(){ 
 						document.getElementById('save_button').style.display = "none";
 						document.getElementById('save_button').style.backgroundColor = "#AB7500";
-						document.getElementById('save_button').style.border = "1px solid #DFA427";
-						
-					}, 1000);
-					
-					
-					
-					
-				}, 1000);
-				
+						document.getElementById('save_button').style.border = "1px solid #DFA427";				
+					}, 1000);	
+				}, 1000);	
 			},
 		});
 
-  
 }
 
 // create a new list item
